@@ -1,0 +1,187 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Device_LED
+#
+DEF Device_LED D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Speaker
+#
+DEF Device_Speaker LS 0 0 Y N 1 F N
+F0 "LS" 50 225 50 H V R CNN
+F1 "Device_Speaker" 50 150 50 H V R CNN
+F2 "" 0 -200 50 H I C CNN
+F3 "" -10 -50 50 H I C CNN
+DRAW
+S -100 50 40 -150 0 0 10 N
+P 4 0 0 10 40 50 140 150 140 -250 40 -150 N
+X 1 1 -200 0 100 R 50 50 1 1 I
+X 2 2 -200 -100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_Push
+#
+DEF Switch_SW_Push SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "Switch_SW_Push" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_Push_SPDT
+#
+DEF Switch_SW_Push_SPDT SW 0 0 Y N 1 F N
+F0 "SW" 0 170 50 H V C CNN
+F1 "Switch_SW_Push_SPDT" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -80 0 20 0 0 0 N
+C 80 -100 20 0 0 0 N
+C 80 100 20 0 1 0 N
+P 2 0 0 0 0 40 0 120 N
+P 2 0 1 0 -60 10 100 80 N
+X A 1 200 100 100 L 50 50 1 1 P
+X B 2 -200 0 100 R 50 50 1 1 P
+X C 3 200 -100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# gbc_just_button_connector_gbc_just_button_connector
+#
+DEF gbc_just_button_connector_gbc_just_button_connector U 0 40 Y Y 1 F N
+F0 "U" 0 150 50 H V C CNN
+F1 "gbc_just_button_connector_gbc_just_button_connector" 0 250 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -400 -100 600 -450 0 1 0 N
+X UP 1 -350 0 100 D 50 50 1 1 I
+X Y 10 550 0 100 D 50 50 1 1 I
+X DOWN 2 -250 0 100 D 50 50 1 1 I
+X LEFT 3 -150 0 100 D 50 50 1 1 I
+X RIGHT 4 -50 0 100 D 50 50 1 1 I
+X A 5 50 0 100 D 50 50 1 1 I
+X B 6 150 0 100 D 50 50 1 1 I
+X START 7 250 0 100 D 50 50 1 1 I
+X SELECT 8 350 0 100 D 50 50 1 1 I
+X X 9 450 0 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# gbc_just_button_connector_gbc_power_connector
+#
+DEF gbc_just_button_connector_gbc_power_connector U 0 40 Y Y 1 F N
+F0 "U" 0 -800 50 H V C CNN
+F1 "gbc_just_button_connector_gbc_power_connector" 0 -700 50 H V C CNN
+F2 "" 0 100 50 H I C CNN
+F3 "" 0 100 50 H I C CNN
+DRAW
+S -350 0 350 -600 0 1 0 N
+X GND 1 -300 100 100 D 50 50 1 1 I
+X Sound_GND 2 -200 100 100 D 50 50 1 1 I
+X R_Sound 3 -100 100 100 D 50 50 1 1 I
+X L_Sound 4 0 100 100 D 50 50 1 1 I
+X Power_out 5 100 100 100 D 50 50 1 1 I
+X USB_CHARGER 6 200 100 100 D 50 50 1 1 I
+X Power_back_in 7 300 100 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# gbc_retrozero_buttons_led-rescue_audio_jack_5pin-audio_jack_5pin-gbc_retrozero_buttons-rescue
+#
+DEF gbc_retrozero_buttons_led-rescue_audio_jack_5pin-audio_jack_5pin-gbc_retrozero_buttons-rescue U 0 40 Y Y 1 F N
+F0 "U" 450 200 50 V V C CNN
+F1 "gbc_retrozero_buttons_led-rescue_audio_jack_5pin-audio_jack_5pin-gbc_retrozero_buttons-rescue" 350 200 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -250 0 250 450 0 1 0 N
+S -100 450 100 500 0 1 0 N
+X GND 1 0 -100 100 U 50 50 1 1 I
+X LEFT_IN 2 200 -100 100 U 50 50 1 1 I
+X LEFT_OUT 3 100 -100 100 U 50 50 1 1 I
+X RIGHT_OUT 4 -100 -100 100 U 50 50 1 1 I
+X RIGHT_IN 5 -200 -100 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# gbc_retrozero_buttons_led-rescue_battery_custom-battery_custom-gbc_retrozero_buttons-rescue
+#
+DEF gbc_retrozero_buttons_led-rescue_battery_custom-battery_custom-gbc_retrozero_buttons-rescue U 0 40 Y Y 1 F N
+F0 "U" 150 150 50 V V C CNN
+F1 "gbc_retrozero_buttons_led-rescue_battery_custom-battery_custom-gbc_retrozero_buttons-rescue" -200 150 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -100 0 100 250 0 1 0 N
+X GND 1 -50 -100 100 U 50 50 1 1 I
+X VCC 2 50 -100 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# gbc_retrozero_buttons_led-rescue_power_bank_black-power_bank_black-gbc_retrozero_buttons-rescue
+#
+DEF gbc_retrozero_buttons_led-rescue_power_bank_black-power_bank_black-gbc_retrozero_buttons-rescue U 0 40 Y Y 1 F N
+F0 "U" 0 350 50 H V C CNN
+F1 "gbc_retrozero_buttons_led-rescue_power_bank_black-power_bank_black-gbc_retrozero_buttons-rescue" 0 450 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -350 600 350 0 0 1 0 N
+X VIN 1 -250 -100 100 U 50 50 1 1 I
+X GND 2 -150 -100 100 U 50 50 1 1 I
+X GND 3 -50 -100 100 U 50 50 1 1 I
+X BAT 4 50 -100 100 U 50 50 1 1 I
+X GND 5 150 -100 100 U 50 50 1 1 I
+X VOUT 6 250 -100 100 U 50 50 1 1 I
+X KEY 7 -450 550 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

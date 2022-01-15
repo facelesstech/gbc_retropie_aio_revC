@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name gbc_retrozero_buttons-rescue)(type Legacy)(uri ${KIPRJMOD}/gbc_retrozero_buttons-rescue.lib)(options "")(descr ""))
+  (lib (name gbc_retrozero_buttons_led-rescue)(type Legacy)(uri ${KIPRJMOD}/gbc_retrozero_buttons_led-rescue.lib)(options "")(descr ""))
+)

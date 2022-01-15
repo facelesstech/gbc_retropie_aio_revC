@@ -1,0 +1,73 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# audio_jack_5pin-audio_jack_5pin-gbc_retrozero_buttons-rescue
+#
+DEF audio_jack_5pin-audio_jack_5pin-gbc_retrozero_buttons-rescue U 0 40 Y Y 1 F N
+F0 "U" 450 200 50 V V C CNN
+F1 "audio_jack_5pin-audio_jack_5pin-gbc_retrozero_buttons-rescue" 350 200 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -250 0 250 450 0 1 0 N
+S -100 450 100 500 0 1 0 N
+X GND 1 0 -100 100 U 50 50 1 1 I
+X LEFT_IN 2 200 -100 100 U 50 50 1 1 I
+X LEFT_OUT 3 100 -100 100 U 50 50 1 1 I
+X RIGHT_OUT 4 -100 -100 100 U 50 50 1 1 I
+X RIGHT_IN 5 -200 -100 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# battery_custom-battery_custom-gbc_retrozero_buttons-rescue
+#
+DEF battery_custom-battery_custom-gbc_retrozero_buttons-rescue U 0 40 Y Y 1 F N
+F0 "U" 150 150 50 V V C CNN
+F1 "battery_custom-battery_custom-gbc_retrozero_buttons-rescue" -200 150 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -100 0 100 250 0 1 0 N
+X GND 1 -50 -100 100 U 50 50 1 1 I
+X VCC 2 50 -100 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# gbc_power_connector-gbc_just_button_connector-gbc_retrozero_buttons-rescue
+#
+DEF gbc_power_connector-gbc_just_button_connector-gbc_retrozero_buttons-rescue U 0 40 Y Y 1 F N
+F0 "U" 0 250 50 H V C CNN
+F1 "gbc_power_connector-gbc_just_button_connector-gbc_retrozero_buttons-rescue" 0 350 50 H V C CNN
+F2 "" 0 100 50 H I C CNN
+F3 "" 0 100 50 H I C CNN
+DRAW
+S -350 0 250 -600 0 1 0 N
+X GND 1 -300 100 100 D 50 50 1 1 I
+X Sound_GND 2 -200 100 100 D 50 50 1 1 I
+X R_Sound 3 -100 100 100 D 50 50 1 1 I
+X L_Sound 4 0 100 100 D 50 50 1 1 I
+X Power_out 5 100 100 100 D 50 50 1 1 I
+X USB_CHARGER 6 200 100 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# power_bank_black-power_bank_black-gbc_retrozero_buttons-rescue
+#
+DEF power_bank_black-power_bank_black-gbc_retrozero_buttons-rescue U 0 40 Y Y 1 F N
+F0 "U" 0 350 50 H V C CNN
+F1 "power_bank_black-power_bank_black-gbc_retrozero_buttons-rescue" 0 450 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -350 600 350 0 0 1 0 N
+X VIN 1 -250 -100 100 U 50 50 1 1 I
+X GND 2 -150 -100 100 U 50 50 1 1 I
+X GND 3 -50 -100 100 U 50 50 1 1 I
+X BAT 4 50 -100 100 U 50 50 1 1 I
+X GND 5 150 -100 100 U 50 50 1 1 I
+X VOUT 6 250 -100 100 U 50 50 1 1 I
+X KEY 7 -450 550 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
